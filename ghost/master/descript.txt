@@ -13,4 +13,4 @@ char2.name,‚Í‚Þ‚Ï‚ñ
 
 shiori,satori.dll
 
-homeurl,https://raw.githubusercontent.com/Amazugali/kaisenyousyokuzyouA/master/
+

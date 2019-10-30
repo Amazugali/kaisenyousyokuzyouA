@@ -30,14 +30,14 @@ homeurlはdic_network参照
 ＃sakura.recommendsites,kero.recommendsitesも同様に記述
 
 ＊sakura.portalsites
-ゴーストキット
-http://sgmh.sakura.ne.jp/tcg/kit/
-http://sgmh.sakura.ne.jp/tcg/kit/banner.png
-：配布元
+トラクターのタイヤ（∞）
+https://w.atwiki.jp/vipjojogames/pages/1.html
+
+：トラクターのタイヤだ　のぞくのも恐ろしいくらい大量にいろんなモンが入ってるぜ…
 
 ＊sakura.portalsites
-ゴースト作成入門-里々編-
-http://ghostmaker.vs.land.to/
+カニスレ
+https://jbbs.shitaraba.net/game/47026/
 
-：作成解説
+：今日もカニをスレりにいくのか？
 

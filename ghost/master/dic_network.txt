@@ -7,7 +7,7 @@
 ＃SSPでは上記に加えfileio/readonly
 
 ＠homeurl
-http://更新元url
+https://github.com/Amazugali/kaisenyousyokuzyouA/master/
 
 ＊OnUpdateBegin
 \p[0]ネットワーク更新を始めるぜ
