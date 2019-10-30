@@ -1,0 +1,278 @@
+割とよく見る機会があるイベントを集めました。
+これ以上を求める人はDisc-2とか見てください。
+http://disc2.s56.xrea.com/manual/list_shiori_event.htm
+
+あと、\1の記述を省いているので一部で\1が表示されないことがありますが、
+そういうところは「省いちゃいけないんだなー」と思ってください。
+ソロゴーストだと\1がいらないので省略してしまいました。
+
+
+○リスト
+コール/シェル/最小化/時間ジャンプ/選択枝放置/サーフィスリストア/さわり/インストール/開発/時計合わせ/メールチェック/ヘッドラインセンス/キープレス/ネットワークヘビー
+
+きのこどりふ他いろいろ省略。
+
+
+
+
+＃コール関係
+
+＊OnGhostCalled
+＞OnBoot
+
+＊OnGhostCalling
+\p[0]（Ｒ０）をよぶぜェ～
+
+＊OnGhostCallComplete
+\p[0]（Ｒ０）が起動したぜ
+
+＊OnOtherGhostClosed
+\p[0]（Ｒ０）、帰っちゃったぜ
+
+＊OnOtherGhostChanged
+\p[0]（Ｒ０）が帰って（Ｒ１）が来たぜ！
+
+
+
+＃シェル
+
+＊OnShellChanging
+：（Ｒ０）に着替えます
+
+＊OnShellChanged
+：（Ｒ１）から着替えました
+
+
+
+＃最小化
+
+＊OnWindowStateRestore
+\p[0]帰ったぜェ～
+
+＊OnWindowStateMinimize
+\p[0]あん？出かけて来いって？なんだ？
+
+
+
+＃時間イベント
+
+＃とりあえずコメントアウトしておきます
+＃＊OnSecondChange
+＃＊OnMinuteChange
+
+
+
+＃選択枝放置
+＊OnChoiceTimeout
+\p[0]なんだよォ、無視すんなよぉ
+
+
+
+＃サーフィスイベント
+
+＃とりあえずコメントアウトしておきます
+＃＊OnSurfaceRestore
+＃（Ｒ０）＝本体側サーフィス番号、（Ｒ１）＝相方側サーフィス番号
+＃サーフィス戻し関係が有効なら使う機会なし
+
+
+
+＃さわり反応
+
+＃とりあえずコメントアウトしておきます
+＃＊OnMouseMove
+＃＊OnMouseWheel
+＃基本的に＞（Ｒ３）（Ｒ４）なでられ、ころころといった分岐
+＃（Ｒ３）は0/1（本体または相方）、（Ｒ４）は当り判定の名前
+
+
+
+＃インストール
+＃（Ｒ０）＝識別子または失敗理由またはaccept先
+＃（Ｒ１）名前　（Ｒ２）バルーンつきゴーストのバルーン名
+＃識別子＝shell/ghost/balloon/plugin/headline/supplement/ghost with balloon/shell with balloon
+＃
+
+＊OnInstallBegin
+：インストール開始
+
+＊OnInstallComplete
+：インストール完了
+
+＊OnInstallFailure
+：インストール失敗
+
+＊OnInstallRefuse
+：accept違いによりインストール失敗
+
+
+
+＃開発関係
+
+＊OnUpdatedataCreating
+：アップデートファイル作成開始
+
+＊OnUpdatedataCreated
+：アップデートファイル作成完了
+
+＃（Ｒ０）＝名前、（Ｒ１）＝ファイル名、（Ｒ２）＝識別子
+
+＊OnNarCreating
+：Narアーカイブ作成開始
+
+＊OnNarCreated
+：Narアーカイブ作成完了
+
+
+
+＃時計合わせ
+
+＊OnSNTPBegin
+：時計合わせ開始
+
+＊OnSNTPCompare
+：時計合わせ接続
+
+＊OnSNTPCorrect
+：時計合わせ完了
+
+＊OnSNTPFailure
+：時計合わせ失敗
+
+
+
+＃メールチェックイベント
+
+＊OnBIFFBegin
+：メールチェック開始
+
+＊OnBIFFComplete
+：メールチェック成功
+（Ｒ０）通、（Ｒ１）バイト、新着は（Ｒ３）通
+
+＊OnBIFF2Complete
+：前回チェック時からの新着メールがあります
+（Ｒ０）通、（Ｒ１）バイト
+
+＊OnBIFFFailure
+：メールチェック失敗
+
+＃（Ｒ０）＝失敗理由、timeout/kick/defect
+
+
+
+＃ヘッドラインセンスイベント
+
+＊OnHeadlinesenseBegin
+：ヘッドラインセンス開始
+
+＊OnHeadlinesense.OnFind
+：ヘッドラインセンスがあります
+
+＃（Ｒ２）＝フェーズ、First/Fisrt and Last/Last/Next
+
+＊OnHeadlinesenseComplete
+：ヘッドラインセンス終了
+
+＊OnHeadlinesenseFailure
+：ヘッドラインセンス失敗
+
+＃（Ｒ０）＝終了理由、no update/can't download/can't analyze
+
+
+
+＃他
+
+＊OnKeyPress
+：（Ｒ０）キーが押されました
+
+＊OnNetworkHeavy
+：ネットワークが重たいようです
+
+
+＃-----------　AIグラフ　-----------
+＃SSP/2.3.18以降限定
+＃オーナードローメニューの情報(A) -> AIグラフ(I)で確認可能です。
+＃項目が3つ以上ないとグラフ表示出来ません（2角形は描写できない）。
+＃項目20個の20角形が描写可能なのは確認。見づらくなるものの、上限はなさそう。
+
+＃1行目、表示項目名
+＃　　グラフに表示される項目名です。半角カンマ、バイト値、╋（引数区切り文字として使用）は使えません。
+＃2行目、現在値
+＃　　グラフに表示される値です。緑色で描画されます。半角数字のみ。
+＃3行目、増分値（省略可、省略した場合0扱い）
+＃　　0以外の数を入れると現在値に赤色の描画が追加されます。半角数字のみ。
+＃4行目、最大値（省略可、省略した場合、現在値+増分値の値）
+＃　　グラフの最大値、（現在値 + 増分値）より小さい値にすると、グラフが飛び出します。演出などに。半角数字のみ。
+＊AIグラフ
+カニ頭脳
+9
+0
+15
+
+＃変数を使う場合は、zen2hanを使って半角にしてください。
+＊AIグラフ
+エビ頭脳
+7
+0
+15
+
+＊AIグラフ
+はむ頭脳
+5
+0
+15
+
+＃処理部
+＃改造する必要がなければ、触らなくて大丈夫です
+＠getaistate
+（set,AIgraphsrc,）φ
+（set,AIgraphnum,）φ
+（set,AIgraphname,）φ
+（set,AIgraphinc,）φ
+（set,AIgraphmax,）φ
+（when,（変数「自動挿入ウェイトの倍率」の存在）,
+	（set,AIgraphbackup,（自動挿入ウェイトの倍率））,
+	（set,AIgraphbackup,）
+）φ
+（set,自動挿入ウェイトの倍率,０％）φ
+（set,文「AIグラフ」の重複回避,降順、トーク中）φ
+（set,引数区切り追加,╋）φ
+（for╋1╋（文「AIグラフ」の数）╋1╋
+	（set╋AIgraphsrc╋（replace╋（AIグラフ）╋\n╋,））
+	（nop╋（split╋（AIgraphsrc）╋,╋0╋1））
+	（set╋AIgraphname╋
+		（when╋（変数「AIgraphname」の存在）╋（AIgraphname）,）
+		（erase╋（S0）╋\1）
+	）
+	（set╋AIgraphnum╋
+		（when╋（変数「AIgraphnum」の存在）╋（AIgraphnum）,）
+		（erase╋（S1）╋\e）
+	）
+	（set╋AIgraphinc╋
+		（when╋（変数「AIgraphinc」の存在）╋（AIgraphinc）,）
+		（when╋（変数「S2」の存在）╋（erase╋（S2）╋\e）╋0）
+	）
+	（set╋AIgraphmax╋
+		（when╋（変数「AIgraphmax」の存在）╋（AIgraphmax）,）
+		（when╋（変数「S3」の存在）╋
+			（erase╋（S3）╋\e）╋
+			（calc╋（erase╋（S1）╋\e） + （when╋（変数「S2」の存在）╋（erase╋（S2）╋\e）╋0））
+		）
+	）
+）φ
+（AIgraphnum）（バイト値,1）（AIgraphname）（バイト値,1）（AIgraphinc）（バイト値,1）（AIgraphmax）φ
+（set,引数区切り削除,╋）φ
+（when,（変数「AIgraphbackup」の存在）,
+	（set,自動挿入ウェイトの倍率,（AIgraphbackup））
+	（set,AIgraphbackup,）,
+	（set,自動挿入ウェイトの倍率,）
+）φ
+（set,AIgraphsrc,）φ
+（set,AIgraphnum,）φ
+（set,AIgraphname,）φ
+（set,AIgraphinc,）φ
+（set,AIgraphmax,）
+
+
+

@@ -1,0 +1,14 @@
+charset,Shift_JIS
+
+craftman,Amazugali(Asaduke_ro)
+craftmanw,甘酢漬け(あさづけ・ろ)
+craftmanurl,https://givigiviak028.wixsite.com/tukemonosouko
+
+name,カニエビはむ
+type,ghost
+
+sakura.name,カニサーレー
+kero.name,エビズッケェロ
+char2.name,はむぱん
+
+shiori,satori.dll
