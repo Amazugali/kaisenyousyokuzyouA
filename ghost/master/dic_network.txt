@@ -13,13 +13,13 @@ https://raw.githubusercontent.com/Amazugali/kaisenyousyokuzyouA/master/
 \p[0]ネットワーク更新を始めるぜ
 
 ＊OnUpdateReady
-\p[0]更新ファイルを確認してるところだ…どれどれ…
+\p[0]\s[6]更新ファイルを確認してるところだ…どれどれ…
 
 ＊OnUpdateComplete
-\p[0]更新成功だぜ！
+\p[0]\s[5]更新成功だぜ！
 
 ＊OnUpdateFailure
-\p[0]何が悪いか分らんが更新に失敗したみたいだぜ？
+\p[0]\s[7]何が悪いか分らんが更新に失敗したみたいだぜ？
 
 
 
