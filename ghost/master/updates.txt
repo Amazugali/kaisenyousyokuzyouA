@@ -1,7 +1,7 @@
 file,.gitattributes05bdb783ee6514c8c072e47680af8ff7size=66
 file,ghost/master/descript.txt128ee4b4864add3c5a876314ad5503a4size=281
 file,ghost/master/dic_advanced.txt6d7123981fe2bd9e87efffb0a6ffda16size=5895
-file,ghost/master/dic_atari.txtcabd730aba2ce3bb81a57238cabef203size=1678
+file,ghost/master/dic_atari.txt7ba744966db31c23e7f0bc3c9d870c5asize=1588
 file,ghost/master/dic_base.txt81733f8a21027a54d18d76f5371a4025size=4126
 file,ghost/master/dic_network.txt4f1c4823701e4f51b52f814e22b3f233size=803
 file,ghost/master/dic_resource.txt5c303c3ef7075007037be29c9af317d3size=916
